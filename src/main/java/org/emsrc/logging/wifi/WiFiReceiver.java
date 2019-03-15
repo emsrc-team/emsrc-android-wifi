@@ -28,7 +28,7 @@ public class WiFiReceiver extends BroadcastReceiver {
 
         long timestamp = System.currentTimeMillis();
 
-        // TODO
+        // TODO create log entry instance + save
 //        UsageActivity lastUsageActivity = appDatabaseHelper.getLastUsageActivity(UsageActivityName.WIFI);
 //        if (lastUsageActivity != null) {
 //            lastState = WifiState.fromString(lastUsageActivity.getEvent());
