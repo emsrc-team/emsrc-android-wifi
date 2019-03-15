@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.emsrc.logging.wifi">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <!-- registering the logging component, so that i becomes visible to the core module:
+         name must always start with "org.emsrc.logging.component." !
+         value must be the class which implements ILoggingComponent !
+         -->
+    <meta-data
+        android:name="org.emsrc.logging.component.wifireceiver"
+        android:value="org.emsrc.logging.wifi.WiFiLoggingComponent" />
+    </application>
+</manifest>
